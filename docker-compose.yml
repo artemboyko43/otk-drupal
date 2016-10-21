@@ -18,18 +18,19 @@ services:
     environment:
       PHP_SITE_NAME: dev
       PHP_HOST_NAME: localhost:8000
-#      PHP_DOCROOT: public # Relative path inside the /var/www/html/ directory.
+  #    PHP_DOCROOT: public # Relative path inside the /var/www/html/ directory.
       PHP_SENDMAIL_PATH: /usr/sbin/sendmail -t -i -S mailhog:1025
       PHP_XDEBUG_ENABLED: 0 # Set 1 to enable.
     volumes:
-      - ./:/var/www/html
+      - ./project:/var/www/html
+  #  command: composer create-project drupal-composer/drupal-project:8.x-dev /var/www/html --stability dev --no-interaction
 
   nginx:
     image: wodby/drupal-nginx
     environment:
       NGINX_SERVER_NAME: localhost
       NGINX_UPSTREAM_NAME: php
-#      NGINX_DOCROOT: public # Relative path inside the /var/www/html/ directory.
+      NGINX_DOCROOT: web # Relative path inside the /var/www/html/ directory.
       DRUPAL_VERSION: 8 # Allowed: 7, 8.
     volumes_from:
       - php
