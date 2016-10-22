@@ -1,3 +1,8 @@
 docker-runtime/*
 project/web/modules/contrib/*
 project/web/themes/contrib/*
+
+# phpstorm folder.
+.idea/
+# docker folder.
+docker-runtime/
