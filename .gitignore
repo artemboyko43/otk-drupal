@@ -1,1 +1,3 @@
 docker-runtime/*
+web/modules/contrib/*
+web/themes/contrib/*
