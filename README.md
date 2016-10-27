@@ -19,14 +19,11 @@ $ docker-compose up -d
 $ docker-compose exec --user 82 php sh
 ```
 
-3. Install drupal8 by composer, I choose this template `drupal-composer/drupal-project`. But you can use other.
+3. Install drupal8 by composer(**You should connected to your php container**), I choose this template `drupal-composer/drupal-project`. But you can use other.
 
 ```sh
 $ composer create-project drupal-composer/drupal-project:8.x-dev /var/www/html --stability dev --no-interaction
 ```
-
-$ docker exec PHP_CONTAINER_NAME composer create-project drupal-composer/drupal-project:8.x-dev /var/www/html --stability dev --no-interaction
-
 
 I use two good tools:
 * [docker4drupal](https://github.com/Wodby/docker4drupal)
