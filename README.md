@@ -8,6 +8,7 @@ OTK - One turn kill :). In this repo means minimum quantity of commands to insta
 ### Steps:
 
 1. Up environment by on command, more information about ports, configuration in `docker-compose.yml`
+
 ```sh
 $ docker-compose up -d
 ```
