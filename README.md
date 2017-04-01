@@ -22,7 +22,7 @@ OTK - One turn kill :). In this repo means minimum quantity of commands to insta
 3. Install drupal8 by composer(**You should be connected to your php container**), I choose this template `drupal-composer/drupal-project`. But you can use other.
 
     ```sh
-    $ composer create-project drupal-composer/drupal-project:8.x-dev /var/www/html --stability dev --no-dev --no-interaction
+    $ composer create-project drupal-composer/drupal-project:8.x-dev /var/www/html/project --stability dev --no-dev --no-interaction
     ```
 
 4. Open you project here http://drupal.docker.localhost:8000/
