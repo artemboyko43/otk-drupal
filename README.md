@@ -25,6 +25,9 @@ OTK - One turn kill :). In this repo means minimum quantity of commands to insta
     $ composer create-project drupal-composer/drupal-project:8.x-dev /var/www/html --stability dev --no-dev --no-interaction
     ```
 
+4. Open you project here http://drupal.docker.localhost:8000/
+
 I use two good tools:
 * [docker4drupal](https://github.com/Wodby/docker4drupal)
 * [drupal composer template](https://github.com/drupal-composer/drupal-project)
+
